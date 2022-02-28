@@ -1,80 +1,103 @@
-/* This stylesheet is where to add styles for your Shakespeare Play */
-/*We usually add something general for the body*/
 * {
-  margin: 0;
-  padding: 0;
-  box-sizing: border-box;
+    box-sizing: border-box;
+    margin: 0;
+    padding: 0;
+  }
+  
+
+body{
+    font-family: Cambria, Cochin, Georgia, Times, 'Times New Roman', serif;
+    background-color: black;
+    color: white;
+}
+main{
+    width: 70%;
+    margin: auto;
+    padding: 2em;
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    background-color: black;
+    justify-content: center;
 }
 
-body {
-  font-family: Verdana, Geneva, Tahoma, sans-serif;
-  /*your style rules go in here */
+header { background-color: black;}
+
+figure {
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 .5em;
 }
 
 section {
-  border: 0;
+
+    flex-basis: 350px;
+    flex-grow: 0;
+    flex-shrink: 1;
+    margin: 0 .5em; 
+    background-color: darkred;
+    padding: 1em;
+    /* display: block; */
+    
+ }
+
+h1 {
+    font-family:'Roboto Slab Light 300', serif;
+    text-align: center;
+    font-size: 3em;
+    background-color: black;
+    padding-top: .5em;
+    
+    
 }
 
-/*Here follows the class names that you will have in your html*/
-/*You may have more if you added styles in InDesign*/
-/*You need to add the style attributes between the curly brackets*/
 
-/* the following may not be used but it doesn't matter if they are listed here  */
-
-section.cover {
-  text-align: center;
-  width: 70%;
-  margin: 20px auto;
+h2 {
+    font-family: 'Roboto Slab Light 300', serif;
+    text-align: center;
+    font-size: 30px;
+    padding-bottom: 1em;
 }
 
-img.playimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
+
+
+img{
+    width: 100%;
+    display: block;
 }
 
-img.shakespeareimage {
-  /* you will need a width attribute in here */
-  max-width: 40%;
-  padding: 20px auto;
+
+ul{ 
+    font-size: 17.2px;
+    list-style-type: none;
+    }
+
+p {padding-top: 1em;
+    /* margin:0; */
 }
 
-/* If you have created any new stlyes in InDesign and used export tags then you need to add them here */
+button 
+{ 
+    margin-top: 2em;
+    border-radius: 4px;
+    padding: 6px 14px;
+    background-color: white;
+    font-size: .8em;
+    font-family: "Robato Slab";
+    font-weight: 600;
+    }
 
-section.dramatis {
-}
-section.play {
-}
-div.sceneImage {
-}
-h1.act {
-}
-p.character {
-}
-p.charactername {
-}
-h1.dramatishead {
-}
-h2.firstscene {
-}
-h2.location {
-}
-p.play_location {
-}
-p.prose {
-}
-h2.scene {
-}
-p.song {
-}
-h2.stagedirection {
-}
-p.verseline {
-}
-span.character_role {
-}
-span.stage_directions_inline {
+button:hover {
+    background-color: black;
+    color: white;
 }
 
-span.character_beforespeech {
+footer { 
+    width: 60%;
+    margin: 0 auto;
+    text-align: center;
+    max-width: 600px;
+    color: white;
+    padding-bottom: 3em;
 }
