@@ -1,0 +1,326 @@
+/* This stylesheet is where to add styles for your Shakespeare Play */
+/*We usually add something general for the body*/
+* {
+  margin: auto;
+  padding: 0;
+  box-sizing: border-box;
+} 
+
+html {
+  scroll-behavior: smooth;
+  scroll-padding-top: 80px;
+}
+
+body {
+  background-color: beige;
+  /*your style rules go in here */
+}
+
+
+section {
+  border: 0;
+}
+
+/*Here follows the class names that you will have in your html*/
+/*You may have more if you added styles in InDesign*/
+/*You need to add the style attributes between the curly brackets*/
+
+/* the following may not be used but it doesn't matter if they are listed here  */
+
+/* If you ahe created any new styles in InDesign and used export tags then you need to add them here */
+
+
+
+
+section.dramatis {
+  border: 4px solid black;
+  width: 70%;
+  margin: 3em auto;
+  padding:1.5em;
+  text-align: center;
+  font-family: 'Robato Slab';
+}
+
+section.play {
+  border: 4px solid black;
+  width: 70%;
+  margin: 3em auto;
+  padding: 1.5em;
+  font-family: 'Robato Slab';
+}
+header {
+  background-color: black;
+  color: white;
+  text-align: center;
+  padding: 1em;
+  margin: 1em;
+}
+.dramatis, .play {
+  background-color: white;
+}
+
+figure {
+  width: 100%;
+  margin: auto;
+  flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 01;
+  
+
+}
+
+div {
+  width: 100%;
+  margin: 12px auto;
+  flex-basis: 600px;
+  flex-grow: 1;
+  flex-shrink: 01;
+  display: block;
+}
+
+img {
+  width: 70%;
+  display: block;
+  flex-basis: 400px;
+    flex-grow: 1;
+    flex-shrink: 01;
+    margin: auto;
+}
+
+p.charactername {
+  color: black;
+  padding: .5em;
+  font-family:'Roboto Slab'; 
+  font-weight: 600;
+  
+}
+
+span.characterrole {
+  color: black;
+  font-family:'Roboto Slab';
+  font-weight: 200;
+  font-style: normal;
+}
+
+h1.dramatishead {
+    text-align: center;
+    padding: .5em;
+    background-color: black;
+    color: white; 
+    font-size: 2em;
+    font-family: 'Robato Slab';
+}
+
+h2.playlocation {
+  color: darkred;
+  padding: 1em;
+  font-family:'Robato Slab';
+}
+
+h1.act {
+  margin-top: .2em;
+  margin-bottom: .5em;
+  text-align: center;
+  padding: .2em;
+  background-color: black;
+  color: white;
+  font-size: 3em;
+}
+
+.firstscene, .scene, .All-Scenes {
+
+  text-align: left;
+  padding-top: 3em;
+
+}
+
+
+.locationtext {
+color: darkred;
+font-size: 14px;
+}
+
+.stagedirection{
+  font-style: italic;
+  color: grey;
+  padding-bottom: 1em;
+  font-size: 14px;
+}
+
+
+h2.location {
+  text-align: center;
+  padding: 8px;
+  
+}
+
+p.character {
+  font-weight: 600;
+  padding: .5em;
+}
+
+.verseline {
+  margin: 0 0 0.4em 8em;
+}
+
+.backtotop {
+  position: fixed;
+  bottom: 2px;
+  right: 8px:auto
+}
+
+.backtotop a {
+  text-decoration: none;
+  font-size: 3em;
+  color: darkred;
+}
+
+.backtotop a:hover {
+  color: black;
+}
+
+@media screen and (max-width: 800px) {
+  html {
+    font-size: 12px;
+  }
+}
+
+@media screen and (max-width; 700px) {
+  dramatis, 
+  .play, .dramatis {
+    width: 100%;
+    padding: 1em 3em;
+  }
+}
+
+
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: verdana, sans-serif;
+  margin: 80px 2em;
+  padding: 0;
+}
+
+/* the navigation block */
+
+/* we hide the hamburger icon until we are on a small screen */
+
+input[type="checkbox"] {
+  display: none;
+}
+
+.hamburger {
+  display: none;
+  font-size: 2rem;
+  color: white;
+}
+
+nav {
+  display: block;
+  width: 100%;
+  position: fixed;
+  top: 0;
+  left: 0;
+  background-color: black;
+  color:white
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  align-items: center;
+  justify-content:space-around;
+  /*   justify-content: flex-start; */
+}
+
+nav ul li {
+  flex: 0 0 8rem; /*the same as flex-grow, flex-shrink, flex-basis */
+  text-align: center;
+}
+
+/* we turn off the underline and set the padding and the color */
+
+nav ul li a {
+  text-decoration: none;
+  padding: 0.8rem 1rem;
+  display: block;
+  color: white;
+}
+
+/* feedback for the user with a background when hovering hover */
+
+nav ul li:hover {
+  background-color: darkred;
+}
+
+nav ul li a:hover {
+  color: white;
+}
+
+/* sub menus */
+
+li ul {
+  display: none;
+  position: absolute;
+  background-color:darkred;
+}
+
+li ul li a {
+  padding: 0.3rem 1.5rem;
+  /*   font-size: 0.8rem; */
+
+}
+
+nav ul li:hover ul {
+  display: flex;
+  flex-direction: column;
+}
+
+nav ul li ul li {
+  flex: 0 1 auto;
+  width: 8rem; /* the same as the value for flex-basis on the parent li */
+}
+
+/* now for the smaller displays */
+
+@media screen and (max-width: 700px) {
+  nav ul {
+    display: none;
+    flex-direction: column;
+  }
+
+  .hamburger {
+    display: block;
+    float: right;
+    cursor: pointer;
+  }
+
+  /*   ~ the tilda points to the next sibling selector */
+  
+  input[type="checkbox"]:checked ~ ul {
+    display: block;
+  }
+
+  html { scroll-padding-top: 250px;}
+
+  li ul {
+    position: static;
+  }
+
+  nav ul li {
+    flex: 0 0 auto; /*the same as flex-grow, flex-shrink, flex-basis */
+    width: 100%;
+  }
+
+  nav ul li:hover ul {
+    display: flex;
+    flex-direction: column;
+    width: 100%;
+  }
+}
+
